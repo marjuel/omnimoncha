@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="omnimoncha es un servicio de entrega de comidas a domicilio con el fin de ser accesible para los clientes y servir alimentos deliciosos">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+    <links href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></links>
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <title>Omnimoncha</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/resources/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+    <header>
+        <nav>
+            <div class="row">
+                <img src="resources/css/img/logo2.jpg" alt="Omnimoncha logo" class="logo">
+                <img src="resources/css/img/logo2.jpg" alt="Omnimoncha logo" class="logo-black">
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#features">Entrega de comida</a></li>
+                    <li><a href="#works">¿Cómo funciona?</a></li>
+                    <li><a href="#cities">Nuestras ciudades</a></li>
+                    <li><a href="#plans">Iniciar sesión</a></li>
+                </ul>
+                <a class="mobile-nav-icon js--nav-icon"><i class="ion-android-menu"></i></a>
+            </div>
+        </nav>
+        <div class="hero-text-box">
+            <h1>Adiós comida chatarra.<br>Hola comida súper saludable.</h1>
+            <a class="btn btn-full js--scroll-to-plans" href="#">Tengo hambre</a>
+            <a class="btn btn-ghost js--scroll-to-start" href="#">Ver más</a>
+        </div>
+    </header>
+
+    <section class="section-features js--section-features" id='features'>
+        <div class="row">
+            <h2>Obtén comida rápido &mdash; no comida rápida.</h2>
+            <p class="long-copy">Hola, somos Omnimoncha, tu nuevo servicio de entregas de comida exclusivo. Sabemos que siempre estás ocupado. No tienes tiempo para cocinar. Déjanos encargarnos de eso, ¡se nos da muy bien, te lo prometemos!
+            </p>
+        </div>
+
+        <div class="row js--wp-1">
+            <div class="col span-1-of-4 box">
+                <i class="ion-ios-infinite icon-big"></i>
+                <h3>365 días/año</h3>
+                <p>
+                    ¡Nunca vuelvas a cocinar! Te lo decimos en serio. Nuestros planes de suscripción incluyen covertura 365 días/año. O puedes escoger con más flexibilidad si así te gusta.
+                </p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <i class="ion-android-stopwatch icon-big"></i>
+                <h3>Listo en 20 minutos</h3>
+                <p>
+                    Estás a solo veintiún minutos de que tu comida deliciosa y súper nutritiva sea entregada en tu casa. Trabajamos con los mejores chefs de la ciudad para asegurarnos de que estés 100% felíz. </p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <i class="ion-android-sunny icon-big"></i>
+                <h3>100% orgánico</h3>
+                <p>
+                    Todos nuestros vegetales son frescos, orgánicos y locales. Los animales son criados sin hormonas ni antibióticos. Buenos para tu salud, el ambiente, ¡y además sabe mejor! </p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <i class="ion-android-cart icon-big"></i>
+                <h3>¡Ordénalo!</h3>
+                <p>
+                    No ponemos limites a tu creatividad, eso significa que puedes ordenar lo que tu quieras. También puedes elegir en nuestro menu más de 100 platillos deliciosos. ¡Es tu decisión! </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-meals" id='works'>
+        <ul class="meals-showcase clearfix">
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/css/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/css/img/2.jpg " alt="Simple italian pizza with cherry tomatoes ">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/css/img/3.jpg" alt="Chicken breast steak with vegetables">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/css/img/4.jpg " alt="Autumn pumpkin soup ">
+                </figure>
+            </li>
+        </ul>
+        <ul class="meals-showcase clearfix">
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/css/img/5.jpg" alt="Paleo beef steak with vegetables">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/css/img/6.jpg " alt="Healthy baguette with egg and vegetables ">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/css/img/7.jpg " alt="Burger with cheddar and bacon ">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/css/img/8.jpg " alt="Granola with cherries and strawberries ">
+                </figure>
+            </li>
+        </ul>
+    </section>
+
+    <section class="section-steps">
+        <div class="row">
+            <h2>Así funciona &mdash; Tan simple como 1, 2, 3</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-2 steps-box">
+                <img src="resources/css/img/app-iPhone.png" alt="Omnimoncha app on iPhone" class="app-screen js--wp-2">
+            </div>
+            <div class="col span-1-of-2 steps-box">
+                <div class="works-step">
+                    <div>1</div>
+                    <p>Selecciona el plan de suscripción que se ajuste mejor a tus necesidades e inicia sesión hoy.</p>
+                </div>
+                <div class="works-step">
+                    <div>2</div>
+                    <p>Ordena tus deliciosos platillos utilizando nuestra aplicación o sitio web. ¡Incluso puedes llamarnos!</p>
+                </div>
+                <div class="works-step">
+                    <div>3</div>
+                    <p>Disfruta de tu platillo en menos de 20 minutos. ¡Te esperamos!</p>
+                </div>
+                <a href="#" class="btn-app"><img src="resources/css/img/download-app.svg" alt="App Store button"></a>
+                <a href="#" class="btn-app"><img src="resources/css/img/download-app-android.png" alt="Play Store button"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cities" id='cities'>
+        <div class="row">
+            <h2>Actualmente nos encontramos en estas ciudades</h2>
+        </div>
+        <div class="row js--wp-3">
+            <div class="col span-1-of-4 box">
+                <img src="resources/css/img/lisbon-3.jpg" alt="Lisboa">
+                <h3>Lisboa</h3>
+                <div class="city-feature">
+                    <i class="ion-android-person icon-small"></i> 1600+ clientes felices
+                </div>
+                <div class="city-feature">
+                    <i class="ion-android-restaurant icon-small"></i> 60+ chefs profesionales
+                </div>
+                <div class="city-feature">
+                    <i class="ion-social-twitter icon-small"></i>
+                    <a href="#">@omnimoncha_lx</a>
+                </div>
+            </div>
+            <div class="col span-1-of-4 box">
+                <img src="resources/css/img/san-francisco.jpg" alt="San Francisco">
+                <h3>San Francisco</h3>
+                <div class="city-feature">
+                    <i class="ion-android-person icon-small"></i> 3700+ clientes felices
+                </div>
+                <div class="city-feature">
+                    <i class="ion-android-restaurant icon-small"></i> 160+ chefs profesionales
+                </div>
+                <div class="city-feature">
+                    <i class="ion-social-twitter icon-small"></i>
+                    <a href="#">@omnimoncha_sf</a>
+                </div>
+            </div>
+            <div class="col span-1-of-4 box">
+                <img src="resources/css/img/berlin.jpg" alt="Berlín">
+                <h3>Berlín</h3>
+                <div class="city-feature">
+                    <i class="ion-android-person icon-small"></i> 2300+ clientes felices
+                </div>
+                <div class="city-feature">
+                    <i class="ion-android-restaurant icon-small"></i> 110+ chefs profesionales
+                </div>
+                <div class="city-feature">
+                    <i class="ion-social-twitter icon-small"></i>
+                    <a href="#">@omnimoncha_berlin</a>
+                </div>
+            </div>
+            <div class="col span-1-of-4 box">
+                <img src="resources/css/img/london.jpg" alt="Londres">
+                <h3>Londres</h3>
+                <div class="city-feature">
+                    <i class="ion-android-person icon-small"></i> 1200+ clientes felices
+                </div>
+                <div class="city-feature">
+                    <i class="ion-android-restaurant icon-small"></i> 50+ chefs profesionales
+                </div>
+                <div class="city-feature">
+                    <i class="ion-social-twitter icon-small"></i>
+                    <a href="#">@omnimoncha_londres</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-testimonials">
+        <div class="row">
+            <h2>Nuestros clientes no pueden vivir sin nosotros</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <blockquote>
+                    ¡Onmimoncha es simplemente maravilloso! Acabo de iniciar un proyecto que no me deja tiempo para cocinar. Ahora que estoy acostumbrado a él, no podría vivir sin mis platillos diarios.
+                    <cite><img src="resources/css/img/customer-1.jpg" alt="costumer 1">Alberto Duncan</cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    Es barato, saludable y sus platillos saben bien, entregados justo en mi casa. Tenemos muchas servicios a domicilio en Lisboa, pero ninguno se acerca a Omnimoncha. ¡Mi familia y yo estamos enamorados!
+                    <cite><img src="resources/css/img/customer-2.jpg" alt="costumer 2">Joana Silva</cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    Estaba busando un servicio a domicilio fácil y rápido en San Francisco. Probé con muchos pero al final me quedo con Omnimoncha. El mejor servicio a domicilio en el área de Bay. ¡Sigan así!
+                    <cite><img src="resources/css/img/customer-3.jpg" alt="costumer 3">Milton Chapman</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-plans js--section-plans" id='plans'>
+        <div class="row">
+            <h2>Empieza a comer saludable hoy</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <div class="plan-box js--wp-4">
+                    <div>
+                        <h3>Exclusivo</h3>
+                        <p class="plan-price">$299 <span> / mes</span></p>
+                        <p class="plan-price-meal">Son solo $12.20 por comida</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><i class="ion-android-checkbox icon-small">Una comida 10 días/mes</i></li>
+                            <li><i class="ion-android-checkbox icon-small">Ordena 24/7</i></li>
+                            <li><i class="ion-android-checkbox icon-small">Accede a las nuevas creaciones</i></li>
+                            <li><i class="ion-android-checkbox icon-small">Envío gratis</i></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-full">Inicia sesión ahora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-3">
+                <div class="plan-box">
+                    <div>
+                        <h3>Pro</h3>
+                        <p class="plan-price">$139 <span> / mes</span></p>
+                        <p class="plan-price-meal">Son solo $13.80 por comida</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><i class="ion-android-checkbox icon-small">Una comida al día</i></li>
+                            <li><i class="ion-android-checkbox icon-small">Ordena 24/7</i></li>
+                            <li><i class="ion-android-checkbox icon-small">Accede a las nuevas creaciones</i></li>
+                            <li><i class="ion-android-checkbox icon-small">Envío gratis</i></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-ghost">Inicia sesión ahora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-3">
+                <div class="plan-box">
+                    <div>
+                        <h3>Principiante</h3>
+                        <p class="plan-price">$29 <span> / comida</span></p>
+                        <p class="plan-price-meal">&nbsp</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><i class="ion-android-checkbox icon-small">Una comida</i></li>
+                            <li><i class="ion-android-checkbox icon-small">Ordena de 8am a 12pm</i></li>
+                            <li><i class="ion-android-checkbox-blank icon-small">Accede a las nuevas creaciones</i></li>
+                            <li><i class="ion-android-checkbox icon-small">Envío gratis</i></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-ghost">Inicia sesión ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-form">
+        <div class="row">
+            <h2>Nos encantaría escucharte</h2>
+        </div>
+        <div class="row">
+            <form method="POST" action="#" class="contact-form">
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="name">Nombre</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="name" id="name" placeholder="Tu nombre" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="email">Correo electronico</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="email" name="email" id="email" placeholder="Tu correo electronico" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="find-us">¿Cómo nos encontraste?</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <select name="find-us" id="find-us">
+                            <option value="friends" selected>Amigos</option>
+                            <option value="search">Buscador</option>
+                            <option value="ad">Anuncios</option>
+                            <option value="other">Otro</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="news">Boletín informativo</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="checkbox" name="news" id="news" checked> ¡Claro!
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Habla con nosotros</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <textarea name="message" placeholder="Tu mensaje"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Prensa</a></li>
+                        <li><a href="#">App iOS</a></li>
+                        <li><a href="#">App Android</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-pinterest"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Derechos de autor &copy; 2020 by Omnimoncha. Todos los derechos reservados.
+                </p>
+            </div>
+        </footer>
+    </section>
+</body>
+
+</html>

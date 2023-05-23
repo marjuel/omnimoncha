@@ -1,0 +1,653 @@
+/*Configuración básica*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: white;
+    color: rgb(80, 80, 80);
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {
+    zoom: 1
+}
+
+.clearfix::after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/*Componentes reutilizables*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+
+/*Headings*/
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 240%;
+    word-spacing: 4;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: coral;
+    content: "";
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+/*Párrafos*/
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+/*Iconos*/
+
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: coral;
+    margin-bottom: 10px;
+}
+
+.icon-small {
+    display: inline;
+    width: 30px;
+    text-align: center;
+    color: coral;
+    font-size: 120%;
+    /* SECRETOS PARA ALINEAR TEXTO E ICONOS*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+
+/*Links*/
+
+a:link,
+a:visited {
+    color: coral;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid coral;
+}
+
+a:hover,
+a:active {
+    color: rgb(80, 80, 80);
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s, color 0.3s;
+}
+
+
+/*Botones*/
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    width: 190px;
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 200px;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: coral;
+    color: white;
+    margin-right: 15px;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: rgb(209, 102, 63);
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid rgb(209, 102, 63);
+    color: coral;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: rgb(209, 102, 63);
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid coral;
+    color: white;
+}
+
+
+/*Encabezado*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(img/hero2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+    float: left;
+    margin-top: 20px;
+    border: 2px solid white;
+}
+
+.logo-black {
+    display: none;
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    float: left;
+    margin: 5px 0;
+    border: 2px solid #555;
+}
+
+
+/*Main navi*/
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid coral;
+}
+
+
+/*mobile navi*/
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: white;
+}
+
+
+/*Sticky navi*/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 2px rgb(116, 116, 116);
+    z-index: 9999;
+}
+
+.sticky .main-nav {
+    margin-top: 18px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.sticky .logo {
+    display: none;
+}
+
+.sticky .logo-black {
+    display: block;
+}
+
+
+/*Características*/
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+
+/*Platillos*/
+
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.meal-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+
+/*Cómo funciona*/
+
+.section-steps {
+    background-color: rgb(228, 228, 228);
+}
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
+
+.works-step div {
+    color: coral;
+    border: 2px solid coral;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 160%;
+    margin-right: 25px;
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+
+.btn-app img {
+    height: 50px;
+    width: 150px;
+    margin-right: 20px;
+}
+
+
+/*Ciudades*/
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10%;
+}
+
+.city-feature {
+    margin-bottom: 5px;
+}
+
+
+/*Testimonios*/
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    /*para que el before pueda ser absolute*/
+    margin-top: 40px;
+}
+
+blockquote::before {
+    content: "\201c";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -3;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 50px;
+    display: block;
+}
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid coral;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+/*Inicio de sesion*/
+
+.section-plans {
+    background-color: rgb(228, 228, 228);
+}
+
+.plan-box {
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 2px 2px rgb(153, 153, 153);
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+.plan-box:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 200;
+    color: coral;
+}
+
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan ul li {
+    padding: 5px 0;
+}
+
+
+/*Formulario*/
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid rgb(80, 80, 80);
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+/*Pie de página*/
+
+footer {
+    background-color: rgb(39, 39, 39);
+    padding: 40px;
+    font-size: 85%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: rgb(172, 172, 172);
+    transition: color 0.3s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: whitesmoke;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-pinterest,
+.ion-social-instagram {
+    transition: color 0.3s;
+}
+
+.ion-social-facebook:hover {
+    color: rgb(59, 89, 152);
+}
+
+.ion-social-twitter:hover {
+    color: rgb(0, 172, 237);
+}
+
+.ion-social-pinterest:hover {
+    color: rgb(230, 0, 35);
+}
+
+.ion-social-instagram:hover {
+    color: rgb(156, 65, 216);
+}
+
+footer p {
+    margin-top: 20px;
+    color: rgb(172, 172, 172);
+    text-align: center;
+    font-size: 90%;
+}
+
+
+/*Animaciones*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
+}
